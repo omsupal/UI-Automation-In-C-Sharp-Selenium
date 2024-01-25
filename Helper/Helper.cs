@@ -1,17 +1,3 @@
-using System.Security;
-using System;
-using System.Net.Mail;
-using System.Net;
-using Xunit;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium;
-using AventStack.ExtentReports.Reporter;
-using AventStack.ExtentReports;
-using System.IO;
-using Microsoft.Extensions.Configuration;
-using OpenQA.Selenium.Remote;
-using Automation_Freshers.Keyword;
-
 namespace UIAutomationTemplate
 {
 	public class Helper : IDisposable
