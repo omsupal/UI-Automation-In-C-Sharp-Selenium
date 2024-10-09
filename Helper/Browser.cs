@@ -1,4 +1,4 @@
-﻿namespace Automation_Freshers.Keyword
+﻿namespace Automation_Freshers.Helper
 {
 	public class Browser
 	{
@@ -36,7 +36,8 @@
 				new DriverManager().SetUpDriver(new ChromeConfig());
 				WEBDRIVER = new ChromeDriver(options);
 			}
-
+			// Set implicit wait
+			WEBDRIVER.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10); // Adjust the time as needed
 		}
 
 	}

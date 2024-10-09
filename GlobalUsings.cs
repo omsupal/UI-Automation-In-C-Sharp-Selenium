@@ -10,7 +10,6 @@ global using AventStack.ExtentReports;
 global using System.IO;
 global using Microsoft.Extensions.Configuration;
 global using OpenQA.Selenium.Remote;
-global using Automation_Freshers.Keyword;
 global using System.Collections.Generic;
 global using System.Text;
 global using System.Net.Http;

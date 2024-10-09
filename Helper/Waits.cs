@@ -1,4 +1,4 @@
-namespace Automation_Freshers.Keyword
+namespace Automation_Freshers.Helper
 {
 	public class Waits
 	{
