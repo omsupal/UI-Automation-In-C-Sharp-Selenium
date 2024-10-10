@@ -26,3 +26,4 @@ global using NPOI.XSSF.UserModel;
 global using UIAutomationTemplate.Utility;
 global using System.Configuration;
 global using Automation_Freshers.Helper;
+using SeleniumExtras.WaitHelpers;
