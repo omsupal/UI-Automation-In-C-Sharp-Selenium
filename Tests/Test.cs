@@ -5,7 +5,7 @@ namespace UIAutomationTemplate
         Helper setup;
         public ExtentTest test;
         public UIServices services;
-        public ExtentTest extentTest { get; set; } // Renamed from Test to extentTest
+        public ExtentTest extentTest { get; set; }
         public Test2(Helper setup)
         {
             this.setup = setup;
