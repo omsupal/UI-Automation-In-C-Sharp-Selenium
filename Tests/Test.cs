@@ -43,6 +43,7 @@ namespace UIAutomationTemplate
         {
             extentTest = UIServices.EXTENT.CreateTest("Test_" + Guid.NewGuid().ToString()); // Unique test names
 
+
             extentTest.Log(Status.Info, browsername);
             extentTest.Log(Status.Info, "Navigating to google");
 
