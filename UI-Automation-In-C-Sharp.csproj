@@ -18,7 +18,7 @@
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="129.0.6668.9100" />
     <PackageReference Include="AutoItX.Dotnet" Version="3.3.14.2" />
     <PackageReference Include="WebDriverManager" Version="2.16.0" />
-    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="106.0.1370.34" />
+    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="129.0.2792.79" />
     <PackageReference Include="Selenium.WebDriver.GeckoDriver" Version="0.32.0" />
     <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.27.0" />
     <PackageReference Include="DotNetSeleniumExtras.PageObjects" Version="3.11.0" />
