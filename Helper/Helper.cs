@@ -1,4 +1,3 @@
-using Automation_Freshers.Services;
 
 namespace UIAutomationTemplate
 {
@@ -41,7 +40,7 @@ namespace UIAutomationTemplate
 		public void Dispose()
 		{
 			Browser.WEBDRIVER.Quit();
-			Services.EXTENT.Flush();
+			UIServices.EXTENT.Flush();
 		}
 
 		

@@ -1,20 +1,36 @@
-namespace Automation_Freshers.Services
+namespace UIAutomationTemplate.Services
 {
-    public class Services
+    public class UIServices
     {
 
         public static string screenshotpath { get; set; }
         public static ExtentReports EXTENT { get; set; }
+        public static ExtentTest Test { get; set; }
+        private IWebDriver _driver;
 
         /// <summary>
-        /// This Method will Create new extent report
+        /// This Method will create a new Extent report.
         /// </summary>
         public void ExtentStart()
         {
+            // Define the path for the report output
+            string reportPath = @"../../../Reports/" + DateTime.Now.ToString("MMddyyyy_hhmmtt") + ".html";
+
+            // Create an instance of ExtentReports
             EXTENT = new ExtentReports();
-            var htmlreporter = new ExtentHtmlReporter(@"../../../Reports/" + DateTime.Now.ToString("_MMddyyyy_hhmmtt") + ".html");
-            EXTENT.AttachReporter(htmlreporter);
+
+            // Create a new HTML reporter
+            var htmlReporter = new ExtentHtmlReporter(reportPath);
+
+            // Attach the HTML reporter to the ExtentReports instance
+            EXTENT.AttachReporter(htmlReporter);
+
+            // Optional: Set the report details like document title, encoding, etc.
+            htmlReporter.Config.DocumentTitle = "Automation Test Report";
+            htmlReporter.Config.ReportName = "Functional Test Results";
+            htmlReporter.Config.Encoding = "UTF-8";
         }
+
         /// <summary>
 		/// This Method will take the screenshot and save it in Screenshots folder
 		/// <param name="driver"></param>
