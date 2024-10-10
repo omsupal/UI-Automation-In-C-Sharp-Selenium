@@ -6,7 +6,6 @@ namespace UIAutomationTemplate.Services
         public static string screenshotpath { get; set; }
         public static ExtentReports EXTENT { get; set; }
         public static ExtentTest Test { get; set; }
-        private IWebDriver _driver;
 
         /// <summary>
         /// This Method will create a new Extent report.

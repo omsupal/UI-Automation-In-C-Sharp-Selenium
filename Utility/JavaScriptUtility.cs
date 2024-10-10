@@ -9,7 +9,7 @@ namespace UIAutomationTemplate.Utility
         public static void flash(IWebElement element, IWebDriver driver)
         {
             String bgcolor = element.GetCssValue("backgroundColor");
-            for (int i = 0; i < 500; i++)
+            for (int i = 0; i < 50; i++)
             {
                 changeColor("#ed0404", element, driver); // 1
                 changeColor(bgcolor, element, driver); // 2
