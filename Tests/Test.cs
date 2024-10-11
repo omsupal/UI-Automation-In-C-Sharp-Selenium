@@ -27,8 +27,8 @@ namespace UIAutomationTemplate
             extentTest.Log(Status.Pass, "Successfully navigated to Google");
 
             // Add the screenshot to the Extent report
-            UIServices.TakeScreenShot(Browser.WEBDRIVER, "Test");
-            extentTest.AddScreenCaptureFromPath("../../../Screenshots" + "//Screenshots" + "Test" + ".png");
+            UIServices.TakeScreenShot(Browser.WEBDRIVER, "omkar");
+            extentTest.AddScreenCaptureFromPath("../../../Screenshots" + "//Screenshots" + "omkar" + ".png");
 
             // Assert the title of the page
             string url = Browser.WEBDRIVER.Url;

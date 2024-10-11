@@ -40,7 +40,7 @@ namespace UIAutomationTemplate.Services
             String date_time = DateTime.Now.ToString("h:mm:ss tt");
             Screenshot screenshot = ((ITakesScreenshot)driver).GetScreenshot();
             screenshotpath = "../../../Screenshots" + "//Screenshots" + screenshotname + ".png";
-            screenshot.SaveAsFile("../../../Screenshots" + "//Screenshots" + screenshotname + ".png", ScreenshotImageFormat.Png);
+            screenshot.SaveAsFile("../../../Screenshots" + "//Screenshots" + screenshotname + ".png");
         }
 
         /// <summary>
