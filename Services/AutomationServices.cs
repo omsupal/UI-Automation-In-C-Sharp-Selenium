@@ -4,7 +4,7 @@ namespace UIAutomationTemplate.Services
     {
 
         public static string screenshotpath { get; set; }
-        public static ExtentReports EXTENT { get; set; }
+        public ExtentReports EXTENT { get; set; }
         public static ExtentTest Test { get; set; }
 
         /// <summary>

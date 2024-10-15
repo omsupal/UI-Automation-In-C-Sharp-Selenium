@@ -32,3 +32,4 @@ global using AventStack.ExtentReports.Model;
 global using static NPOI.HSSF.Record.UnicodeString;
 global using Org.BouncyCastle.Crypto.Tls;
 global using OpenQA.Selenium.Interactions;
+global using TechTalk.SpecFlow;

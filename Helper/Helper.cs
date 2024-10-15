@@ -3,16 +3,23 @@ namespace UIAutomationTemplate
 {
 	public class Helper : IDisposable
 	{
-		public static IWebDriver WEBDRIVER { get; set; }
+		public IWebDriver WEBDRIVER { get; set; }
+		public Browser _browser { get; set; }
 		public static string B2B_URL { get; set; }
 		public string WEB_URL { get; set; }
 		public static string NODE_URL { get; set; }
 		public static string driver { get; set; }
 		public Configsetting Configsetting { get; private set; }
+		public UIServices services { get; set; }
 
-
+		public Helper()
+		{
+			_browser = new Browser();
+			services = new UIServices();
+			services.ExtentStart();
+		}
 		public static ExtentTest test;
-		
+
 
 		public static void TestGrid()
 		{
@@ -33,17 +40,17 @@ namespace UIAutomationTemplate
 
 		}
 
-		
 
-		
+
+
 
 		public void Dispose()
 		{
-			Browser.WEBDRIVER.Quit();
-			UIServices.EXTENT.Flush();
+			_browser.WEBDRIVER.Quit();
+			services.EXTENT?.Flush();
 		}
 
-		
+
 	}
 
 }

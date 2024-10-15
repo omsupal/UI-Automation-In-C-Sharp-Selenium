@@ -2,14 +2,14 @@
 {
 	public class Browser
 	{
-		public static IWebDriver WEBDRIVER { get; set; }
+		public IWebDriver WEBDRIVER { get; set; }
 
 		/// <summary>
 		/// This Method will be used to setup specific browser
 		/// Pass this as string : chrome,firefox,edge,headless
 		/// <param name="browsername"></param>
 		/// </summary>
-		public static void SETUP(string browsername)
+		public void SETUP(string browsername)
 		{
 			if (browsername == "chrome")
 			{
