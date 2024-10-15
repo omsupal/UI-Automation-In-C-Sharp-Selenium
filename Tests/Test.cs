@@ -16,10 +16,10 @@ namespace UIAutomationTemplate
             extentTest = setup.services.EXTENT.CreateTest("Test_" + Guid.NewGuid().ToString()); // Unique test names
             extentTest.Log(Status.Info, "Navigating to google");
 
-            setup.WEB_URL = "https://www.google.com";
+            setup.WEB_URL = "https://www.traveazy.me/hotel/en-sa";
             setup._browser.SETUP("chrome");
             setup._browser.WEBDRIVER.Navigate().GoToUrl(setup.WEB_URL);
-
+            _ = setup._browser.LogNetworkRequests(setup._browser.WEBDRIVER, setup.WEB_URL);
             // Log the successful step
             extentTest.Log(Status.Pass, "Successfully navigated to Google");
 
@@ -348,7 +348,11 @@ namespace UIAutomationTemplate
             selectDropdown.SelectByIndex(1);
 
             // Verify the selected option
-            Assert.Equal("Option 1", selectDropdown.SelectedOption.Text); 
+            Assert.Equal("Option 1", selectDropdown.SelectedOption.Text);
         }
+
+
+
+
     }
 }

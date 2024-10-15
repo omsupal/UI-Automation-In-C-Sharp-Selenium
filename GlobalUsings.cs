@@ -33,3 +33,8 @@ global using static NPOI.HSSF.Record.UnicodeString;
 global using Org.BouncyCastle.Crypto.Tls;
 global using OpenQA.Selenium.Interactions;
 global using TechTalk.SpecFlow;
+global using OpenQA.Selenium.DevTools;
+global using OpenQA.Selenium.DevTools.V129.Network;
+global using Network = OpenQA.Selenium.DevTools.V129.Network;
+global using DevToolsSessionDomains = OpenQA.Selenium.DevTools.V129.DevToolsSessionDomains;
+
